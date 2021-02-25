@@ -47,6 +47,8 @@ public class JeuTest {
 
     @Test
     public void estFini() {
+        // Indice : Il ne faut pas changer le modèle. C'est le code du test n'est pas correct.
+        //          Utilisez le debugger pour comprendre ce qui se passe.
         assertTrue(jeu.estFini());
         jeu.distribue();
         for (int i = 0; i < NB_CARTES; i++) {
