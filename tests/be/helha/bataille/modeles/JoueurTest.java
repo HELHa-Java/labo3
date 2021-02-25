@@ -36,9 +36,9 @@ public class JoueurTest {
     @Test
     public void incScore() {
         assertEquals(joueur.getScore(), 0);
-        joueur.incScore();
+        joueur.incrementeScore();
         assertEquals(joueur.getScore(), 1);
-        joueur.incScore();
+        joueur.incrementeScore();
         assertEquals(joueur.getScore(), 2);
     }
 
@@ -52,9 +52,9 @@ public class JoueurTest {
     @Test
     public void getScore() {
         assertEquals(joueur.getScore(), 0);
-        joueur.incScore();
+        joueur.incrementeScore();
         assertEquals(joueur.getScore(), 1);
-        joueur.incScore();
+        joueur.incrementeScore();
         assertEquals(joueur.getScore(), 2);
     }
 }

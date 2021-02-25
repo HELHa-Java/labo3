@@ -3,18 +3,18 @@ package be.helha.bataille.modeles;
 import java.util.Objects;
 
 public class Carte {
-    private int value;
+    private int valeur;
     private Couleur couleur;
 
-    public Carte(int value, Couleur couleur) {
-        this.value = value;
+    public Carte(int valeur, Couleur couleur) {
+        this.valeur = valeur;
         this.couleur = couleur;
     }
 
     @Override
     public String toString() {
         String name;
-        switch (value) {
+        switch (valeur) {
             case 1:
                 name = "As";
                 break;
@@ -28,14 +28,14 @@ public class Carte {
                 name = "Roi";
                 break;
             default:
-                name = String.valueOf(value);
+                name = String.valueOf(valeur);
         }
 
         return name + " de " + couleur.name().toLowerCase();
     }
 
     public boolean estAvant(Carte carte) {
-        return this.value < carte.value;
+        return this.valeur < carte.valeur;
     }
 
     @Override
@@ -43,12 +43,12 @@ public class Carte {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
         Carte carte = (Carte) o;
-        return value == carte.value &&
+        return valeur == carte.valeur &&
                 couleur == carte.couleur;
     }
 
     @Override
     public int hashCode() {
-        return Objects.hash(value, couleur);
+        return Objects.hash(valeur, couleur);
     }
 }

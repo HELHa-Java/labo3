@@ -13,7 +13,7 @@ public class Joueur {
         return paquet.tirerUneCarte();
     }
 
-    public void incScore() {
+    public void incrementeScore() {
         score++;
     }
 

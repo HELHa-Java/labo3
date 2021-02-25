@@ -39,9 +39,9 @@ public class Jeu {
             cartes[i] = joueurs[i].donnerCarte();
         }
         if (cartes[0].estAvant(cartes[1])) {
-            joueurs[1].incScore();
+            joueurs[1].incrementeScore();
         } else {
-            joueurs[0].incScore();
+            joueurs[0].incrementeScore();
         }
         return new Tour(cartes[0], cartes[1]);
     }
