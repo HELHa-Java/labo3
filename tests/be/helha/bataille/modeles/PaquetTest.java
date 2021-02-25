@@ -1,11 +1,11 @@
 package be.helha.bataille.modeles;
 
 import be.helha.bataille.modeles.exceptions.PlusDeCarteException;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.util.Arrays;
 
-import static org.junit.Assert.*;
+import static org.junit.jupiter.api.Assertions.*;
 
 public class PaquetTest {
 
@@ -43,11 +43,11 @@ public class PaquetTest {
     public void taille() {
     }
 
-    @Test(expected = PlusDeCarteException.class)
+    @Test
     public void tirerUneCarte_AucuneCarte() {
         Paquet paquet = new Paquet(NB_CARTES);
         assertEquals(paquet.taille(), 0);
-        paquet.tirerUneCarte();
+        assertThrows(PlusDeCarteException.class, () -> paquet.tirerUneCarte());
     }
 
     @Test

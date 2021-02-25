@@ -6,7 +6,7 @@ import be.helha.bataille.vues.UI;
 // TODO : Vérifier que le jeu fonctionne (Bataille simple)
 // TODO : Comprendre la structure du code (MVC)
 // TODO : Corriger les 2 tests qui ne passent pas
-// TODO : Comprendre les setUp (@Before) dans les tests
+// TODO : Comprendre les setUp (@BeforeEach) et le assertThrows dans les tests
 // TODO : Modifier la méthode UI.afficheTour pour que le MVC soit respecté
 // TODO : Ajouter la règle suivante : si les deux cartes sont à égalité, aucun point n'est donné aux joueurs
 // TODO : Ajouter la règle suivante : un 8 l'emporte toujours sur n'importe quelle autre carte

@@ -1,15 +1,16 @@
 package be.helha.bataille.modeles;
 
-import org.junit.Before;
-import org.junit.Test;
 
-import static org.junit.Assert.*;
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.*;
 
 public class JoueurTest {
 
     private Joueur joueur;
 
-    @Before
+    @BeforeEach
     public void setUp() {
         joueur = new Joueur();
         joueur.addCarte(new Carte(1, Couleur.CARREAU));
