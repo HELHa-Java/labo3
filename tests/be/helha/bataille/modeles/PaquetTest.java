@@ -45,7 +45,7 @@ public class PaquetTest {
 
     @Test
     public void tirerUneCarte_AucuneCarte() {
-        // Indice : ne changez pas le code de ce test. Il doit fonctionner tel quel.
+        // Indice : ne changez pas le code de ce test. Il doit fonctionner tel quel. Changez la méthode tirerUneCarte().
         Paquet paquet = new Paquet(NB_CARTES);
         assertEquals(paquet.taille(), 0);
         assertThrows(PlusDeCarteException.class, () -> paquet.tirerUneCarte());

@@ -8,9 +8,9 @@ import be.helha.bataille.vues.UI;
 // TODO : Corriger les 2 tests qui ne passent pas
 // TODO : Comprendre les setUp (@BeforeEach) et le assertThrows dans les tests
 // TODO : Modifier la méthode UI.afficheTour pour que le MVC soit respecté
-// TODO : Ajouter la règle suivante : si les deux cartes sont à égalité, aucun point n'est donné aux joueurs
-// TODO : Ajouter la règle suivante : un 8 l'emporte toujours sur n'importe quelle autre carte
-// TODO : Ajouter le choix de la carte à jouer par chaque joueur à chaque tour
+// TODO : Ajouter le choix de la carte à jouer par chaque joueur à chaque tour (oui, ce n'est plus donc la bataille ;))
+// TODO : Permettre de jouer à plus que 3 joueurs (c'est celui qui a la meilleure carte qui gagne)
+// TODO : Permettre de choisir le nombre de joueurs dès le début du jeu
 // TODO : Tout tester
 
 /**
